@@ -25,7 +25,8 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip  # pip를 업그레이드합니다.
-          pip install -r requirements.txt  # requirements.txt 파일을 사용하여 의존성을 설치합니다.
+          python -m pip install requests-html
+          python -m pip install urllib3
   
       - name: Run Python Script
         run: |
