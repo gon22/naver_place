@@ -1,10 +1,10 @@
 name: Every 10 Minutes schedule
 
-on:
-  schedule:
-    - cron: '0 4 * * *'  # 한국 시간 13:00 (UTC 04:00)
-    - cron: '0 10 * * *' # 한국 시간 19:00 (UTC 10:00)
-    - cron: '* * /05 * *'
+on: [push]
+  #schedule:
+    #- cron: '0 4 * * *'  # 한국 시간 13:00 (UTC 04:00)
+    #- cron: '0 10 * * *' # 한국 시간 19:00 (UTC 10:00)
+    
 
 jobs:
   ten_minutes_schedule_job:
